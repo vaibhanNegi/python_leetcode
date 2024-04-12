@@ -10,3 +10,9 @@ class Solution:
                  elif command[i+1] == "a":
                       res.append("al")
         return "".join(res)
+
+# OTHER APPROACH IS 
+
+ class Solution:
+       def interpret(self, command: str) -> str:
+            return command.replace("()","o").replace("(al)","al")
